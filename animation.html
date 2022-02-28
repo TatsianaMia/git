@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Amimation (home work)</title>
+<style>
+body{
+background: #DCDCDC;
+margin: 0;
+text-align: center;
+}
+.main {
+width:100%;
+height:70vh;
+position: relative;
+perspective: 600px;
+}
+
+.rect {
+background-color:#a90064;
+border: 6px solid #860064;
+width: 350px;
+height:200px;
+position:absolute;
+transition: all 2s;
+}
+
+.rect1 {
+bottom:30vh;
+left:320px;
+transform-origin: left;
+}
+
+.rect2 {
+bottom:30vh;
+left:676px;
+transform-origin: right;
+}
+
+.main:hover .rect1 {
+transform:scale(0.7) rotateY(50deg);
+}
+
+.main:hover .rect2 {
+transform:scale(0.7) rotateY(-50deg);
+}
+h1 {
+font-family: tahoma;
+position: absolute;
+bottom:37vh;;
+left:630px;
+z-index: -1;}
+
+
+
+</style>
+</head>
+<body>
+<div class="main">
+<div class="rect rect1"></div>
+<div class="rect rect2"></div>
+<h1 class="hello">HELLO</h1>
+</div>
+</body>
+</html>
